@@ -1,13 +1,36 @@
-## WSL
-- Instalasi wsl
-  - doenload ubuntu wsl-->install wsl dari windows store lebih simple
-  - windows feature> cekbok windows hypervision dan windows sub linux
-- cek:
-  - buka power shell
-  - wsl -l --all  --> list semua wsl
-  - wsl -l --running --> wsl yang aktif 
-  - wsl --set-version Ubuntu-18.04 2 --> set distro
-  - wsl --shutdown --> mematikan
+## WSL - instalasi
+- dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+- dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+- atau : windows feature> cekbok windows hypervision dan windows sub linux
+- download/install kernel terbaru --> https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+- powershell> wsl --set-default-version 2
+- download ubuntu --> windows store
+
+## manage WSL:
+- buka power shell
+- wsl -l --all  --> list semua wsl
+- wsl -l --running --> wsl yang aktif 
+- wsl --set-version Ubuntu-18.04 2 --> set distro/upgrade ke ver2
+- wsl -s Ubuntu-20.04 --> set distro default
+- wsl -t Ubuntu-18.04 --> terminate distro
+- wsl --shutdown --> mematikan
+
+## prepare WSL - ubuntu
+- Buka ubuntu cli
+- Warning : jika dibuka dari windows terminal, gunakan path /home/<user> sebagai base, tidak dianjurkan menggunakan path base drive windows
+  - lakukan perubahan di windows terminal setting "startingDirectory": "//wsl$/Ubuntu-18.04/home/wes/"
+- buat username/pass --> otomatis saat run ubuntu pertama kali
+- sudo apt update && sudo apt upgrade]
+- reset password --> passwd
+- lupa password --> 
+  - powershell>wsl -u root
+  - passwd <WSLUsername>
+  - exit
+
+## WSL - VS Code
+- sudo apt-get install wget ca-certificates --> untuk ssl web
+- aris@L420-PC:~$ code .
+- install extention wsl
 
 
 
