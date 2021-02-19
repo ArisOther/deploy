@@ -26,20 +26,13 @@
   - powershell>wsl -u root
   - passwd <WSLUsername>
   - exit
-
-## WSL - VS Code
-- sudo apt-get install wget ca-certificates --> untuk ssl web
-- aris@L420-PC:~$ code .
-- install extention wsl
-
-
-
 - Install python 3.8 dan menjadikannya default
   ```
   sudo apt update
   sudo apt install software-properties-common
   sudo add-apt-repository ppa:deadsnakes/ppa
   sudo apt install python3.8
+  python3 -m pip install --upgrade pip
   
   sudo update-alternatives --config python --> jika belum ada, buat config
   sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
@@ -47,6 +40,14 @@
   sudo update-alternatives --config python --> pilih 3.8 sebagai default
   python --version
   ```
+## WSL - VS Code
+- sudo apt-get install wget ca-certificates --> untuk ssl web
+- aris@L420-PC:~$ code .
+- install extention wsl
+
+
+
+
 
 
 
