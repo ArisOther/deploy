@@ -59,12 +59,34 @@ docker container stop mongoserver1
 docker container rm mongoserver1 --> (pastikan kondisi off)
 ```
 
+## Docker container  Best Pracice
+- Docker container Postgresql
+```
+# port default psql = 5432, jika ingin merubah, tambahkan: -p <PORT_TCP>:<PORT_DOCKER>
+
+# Create (cara 1: sudah punya image, cara 2: download image baru dari hub)
+1. docker container create --name postgres_aris -e POSTGRES_PASSWORD=aris1985 postgres:latest
+2. docker run --name postgres_aris -e POSTGRES_PASSWORD=aris1985 -d postgres
+
+docker container ls --all
+docker container start posgres_aris
+
+docker exec -it postgres_aris psql -U postgres --> menjalankan postgres didalam docker
+
+
+
+# Create - Cara alternatif dari docs resmi docker
+docker run --rm -P --name postgres_aris -e POSTGRES_PASSWORD=aris1985 postgres:latest
+docker run --rm -t -i --link postgres_aris:pg postgres:latest bash --> linking
+
+```
+
 ## Integrasi container dengan network
 - integrasi beberapa container
  - connect ke 2 dbase - mongodb & redis
  - pastikan punya image mongo dan redis, kalau ndak punya - pull dari registry
- - docker container create --name mongo -p 27017:27017 mongo:4-xenial
- - docker container create --name redis -p 6379:6379 redis:5
+ - `docker container create --name mongo -p 27017:27017 mongo:4-xenial`
+ - `docker container create --name redis -p 6379:6379 redis:5`
  - Buat file env java
     ```
       hello.name=${NAME}
