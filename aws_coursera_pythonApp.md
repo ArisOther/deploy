@@ -28,4 +28,7 @@
     - Then you will test and view the performance improvements in the AWS X-Ray Console.
 
 ## Building Our Environment
+- Architecture Cloud
+- ![serverless](https://user-images.githubusercontent.com/24581953/116175264-2d024f80-a73a-11eb-9a4a-4c17709ecb02.jpg)
+
 
