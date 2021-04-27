@@ -30,5 +30,19 @@
 ## Building Our Environment
 - Architecture Cloud
 - ![serverless](https://user-images.githubusercontent.com/24581953/116175264-2d024f80-a73a-11eb-9a4a-4c17709ecb02.jpg)
+- AWS Cloud9
 
-
+## AWS CLIs and APIs
+- ![aws-cli](https://user-images.githubusercontent.com/24581953/116177179-8ddf5700-a73d-11eb-9292-009cc66631f9.jpg)
+- Docs: Cloud9, AWS APIs, AWS CLI
+  - AWS CLI
+    - [AWS CLI info](https://aws.amazon.com/cli/)
+    - [AWS CLI install](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
+    - [AWS CLI config](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+  - AWS Cloud9
+    - [Cloud9 User guide](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)
+    - [Temporary Credentials](https://docs.aws.amazon.com/cloud9/latest/user-guide/how-cloud9-with-iam.html#sec-auth-and-access-control-temporary-managed-credentials)
+    - [Cloud9 access key](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html)
+  - IAM
+    - https://docs.aws.amazon.com/cli/latest/reference/iam/
+- AWS SDK Exploration (Python)
