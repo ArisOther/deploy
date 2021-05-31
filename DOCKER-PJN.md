@@ -2,6 +2,7 @@
 
 - After Instalation
   ```
+  sudo service docker start
   docker info
   docker version
   container registry : hub.docker.com
