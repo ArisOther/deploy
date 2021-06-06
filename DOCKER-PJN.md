@@ -32,8 +32,9 @@
   - `docker images` --> cek list images
 - menghapus images
   - `docker image rm mongo:4.1` --> pastikan kondisi tidak sedang digunakan container
-  - `docker image rmi hello`
-  - `docker image rmi -f hello` --> menghapus force, menghilangkan network dsb
+  - `docker rmi hello`
+  - `docker rmi -f hello` --> menghapus force, menghilangkan network dsb
+  - `docker system prune` --> menhapus image/container/network yang nonaktif--hati2
 ## Docker Container
 - Membuat container
   ```
