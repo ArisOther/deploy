@@ -30,8 +30,10 @@
 - mengambil images
   - `docker pull mongo:4.1` --> mengambil dari hub.docker
   - `docker images` --> cek list images
+- menghapus images
   - `docker image rm mongo:4.1` --> pastikan kondisi tidak sedang digunakan container
-
+  - `docker image rmi hello`
+  - `docker image rmi -f hello` --> menghapus force, menghilangkan network dsb
 ## Docker Container
 - Membuat container
   ```
