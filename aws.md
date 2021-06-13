@@ -9,3 +9,5 @@
 - chmod 400 arisdocker.pem
 - ssh -i "arisdocker.pem" ec2-user@ec2-18-141-182-137.ap-southeast-1.compute.amazonaws.com
  
+## AWS Architect
+- [Hosting website statis menggunakan S3 Bucket](https://www.dicoding.com/academies/266/tutorials/13472)
