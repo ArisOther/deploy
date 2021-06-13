@@ -16,3 +16,13 @@
   - [Membuat VPC](https://www.dicoding.com/academies/266/tutorials/13542)
   - [Membuat DB instance](https://www.dicoding.com/academies/266/tutorials/13547)
   - [Membuat EC2 instance](https://www.dicoding.com/academies/266/tutorials/13552)
+- Membuat Virtual Private Cloud
+  - [architecture diagram](https://www.dicoding.com/academies/266/tutorials/13592)
+  - [Membuat VPC A](https://www.dicoding.com/academies/266/tutorials/16428)
+  - [Meluncurkan EC2 Instance di VPC A](https://www.dicoding.com/academies/266/tutorials/16430)
+  - [Membuat VPC B, Meluncurkan EC2 Instance, dan Membangun VPC Peering](https://www.dicoding.com/academies/266/tutorials/16455)
+- Membangun Arsitektur yang Highly Available (Sangat Tersedia)
+  - [architecture diagram](https://www.dicoding.com/academies/266/tutorials/13668)
+  - [Membuat Load Balancer](https://www.dicoding.com/academies/266/tutorials/16435)
+  - [Meluncurkan Auto Scaling](https://www.dicoding.com/academies/266/tutorials/16440)
+  - [Pengujian](https://www.dicoding.com/academies/266/tutorials/16445)
