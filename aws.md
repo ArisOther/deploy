@@ -11,3 +11,4 @@
  
 ## AWS Architect
 - [Hosting website statis menggunakan S3 Bucket](https://www.dicoding.com/academies/266/tutorials/13472)
+- [Deploy Aplikasi Web di AWS - Membuat VPC](https://www.dicoding.com/academies/266/tutorials/13542)
