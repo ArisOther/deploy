@@ -1,5 +1,5 @@
 ## Docker 
-
+- [Instalation](https://docs.docker.com/engine/install/ubuntu/)
 - After Instalation
   ```
   sudo service docker start
@@ -8,7 +8,17 @@
   container registry : hub.docker.com
   docker images --> list image
   ```
-
+- Jika ada error `docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post '.`
+  ```
+  sudo groupadd docker ------> buat grup bernama 'docker'
+  sudo usermod -aG docker $USER  -----> tambahkan user pada grup
+  reboot
+  docker run hello-world  ---> coba jalankan
+  
+  sudo systemctl restart docker
+  sudo chmod 666 /var/run/docker.sock
+   
+  ```
 
 ## Docker Image
 - Membuat image
