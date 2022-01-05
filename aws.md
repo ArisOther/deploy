@@ -9,7 +9,7 @@
 - chmod 400 arisdocker.pem
 - ssh -i "arisdocker.pem" ec2-user@ec2-18-141-182-137.ap-southeast-1.compute.amazonaws.com
 
-- Copy dari local ke ec2
+- kasus - Copy dari local ke ec2
   - scp -i /home/aris/aws_key/arisdocker.pem file_aris.zip ec2-user@ec2-18-141-182-137.ap-southeast-1.compute.amazonaws.com:/home/ubuntu/hortonworks
  
 ## AWS Architect
