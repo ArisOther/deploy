@@ -19,6 +19,18 @@
   sudo chmod 666 /var/run/docker.sock
    
   ```
+- Docker pada aws, permasalahan tidak bisa nyambung ip public
+  ```
+  # Firewall
+  sudo ufw status
+  sudo ufw enable
+  sudo ufw disable
+  sudo ufw status verbose
+  sudo ufw allow 80/tcp
+  
+  sudo netstat -tulpn | grep LISTEN    ----------> cek port yang tersedia
+  sudo nmap 127.0.0.1  ------> scan port yang dipunyai 127.0.0.1
+  ```
 
 ## Docker Image
 - Membuat image
