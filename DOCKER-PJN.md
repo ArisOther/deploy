@@ -8,6 +8,7 @@
   container registry : hub.docker.com
   docker images --> list image
   ```
+## Problem list
 - Jika ada error `docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post '.`
   ```
   sudo groupadd docker ------> buat grup bernama 'docker'
@@ -30,6 +31,27 @@
   
   sudo netstat -tulpn | grep LISTEN    ----------> cek port yang tersedia
   sudo nmap 127.0.0.1  ------> scan port yang dipunyai 127.0.0.1
+  ```
+  - Ternyata permasalahan ada pada cara menjalankan container dari image langsung membuat container tanpa memfoward port yang ada di aws.
+  - cara yang benar:
+  
+  ```
+  
+  matikan firewall
+  pada AWS security group, tambahkan port yang dibutuhkan misal: 80, 8080 dll
+  
+  docker images --> pastikan image sudah ada
+  docker run -d -p 80:80 --name nginx_aris nginx:latest
+  docker ps
+  
+  cek koneksi port:
+  netstat -pln  --> #pastikan port ada dalam list
+  
+  curl http://localhost:80 
+  #jika gagal
+  docker exec nginx_aris curl http://localhost  --> untuk cek curl didalam docker
+  
+
   ```
 
 ## Docker Image
