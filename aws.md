@@ -15,6 +15,11 @@
   - Copy dari local ke ec2 = `scp -i /home/aris/aws_key/arisdocker.pem file_aris.zip ec2-user@ec2-18-141-182-137.ap-southeast-1.compute.amazonaws.com:/home/ubuntu/hortonworks`
   - Amazon Linux --> masuk root = sudo sh --> sudo su
  
+## Setting instance baru ( ubuntu )
+- sudo apt update
+- python
+  - python3 --version
+  - upgrade ke pytohn terbaru --> https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux
 ## AWS Architect
 - [Hosting website statis menggunakan S3 Bucket](https://www.dicoding.com/academies/266/tutorials/13472)
 - Deploy Aplikasi Web di AWS
