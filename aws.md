@@ -1,7 +1,9 @@
 ## AWS
 - [AWS - Dicoding Academy](https://github.com/ArisOther/aws-dicoding)
 - [AWS - Coursera, Build modern python App](https://github.com/ArisOther/deploy/blob/main/aws_coursera_pythonApp.md)
-
+## Account
+- winandiaris2@gmail.com pass: Sm@d@**** , instance: docker
+- freeeup.awinandi@gmail.com pass: Sm@d@****, 
 ## Best practice
 - buat ec2 instance,\
 - simpan pemfile
