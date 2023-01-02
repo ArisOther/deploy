@@ -237,6 +237,13 @@ docker run --rm -t -i --link postgres_aris:pg postgres:latest bash --> linking
 - ulangi create: `docker container create --name mongo -p 27017:27017 -v mongo_data:/data/db mongo:4-xenial`
 - maka database diawal tadi tetep ada karena db tersimpan di volume mongo_data
 
+## Backup
+- `docker inspect -f '{{ json .Mounts }}' 007dabafcad8 | python -m json.tool` --> mencari path mounts
+- `docker run --rm --volumes-from 007dabafcad8 -v $(pwd):/backup ubuntu tar cvf /backup/backup_static.tar /opt/services/djangoapp/static`
+## Restore
+- create new container - db_store2
+- `docker run --rm --volumes-from dbstore2 -v $(pwd):/backup ubuntu bash -c "cd /dbdata && tar xvf /backup/backup.tar --strip 1"`
+- https://www.youtube.com/watch?v=ZEy8iFbgbPA
 ## Docker Hub
 - Buat akun di docker hub --> di terminal local: docker login
 - Misal ada image local: `volume-dtabase123`
