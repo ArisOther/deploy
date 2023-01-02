@@ -236,3 +236,11 @@ docker run --rm -t -i --link postgres_aris:pg postgres:latest bash --> linking
   ```
 - ulangi create: `docker container create --name mongo -p 27017:27017 -v mongo_data:/data/db mongo:4-xenial`
 - maka database diawal tadi tetep ada karena db tersimpan di volume mongo_data
+
+## Docker Hub
+- Buat akun di docker hub --> di terminal local: docker login
+- Misal ada image local: `volume-dtabase123`
+- Buat repo di docker hub. Misal : `aris/volume-dtabase`
+- `docker push aris/volume-dtabase:1.0` ---> maka akan error karena nama image dilocal tidak sama dengan nama image di hub
+- solusi buat tag: `docker tag volume-dtabase123:1.0 aris/volume-dtabase:1.0`
+- 
