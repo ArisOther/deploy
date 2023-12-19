@@ -1,1 +1,8 @@
-test
+- Base
+  - sudo systemctl status nginx
+  - sudo systemctl start nginx
+  - sudo nginx -t # --> check config
+  - sudo nano /etc/nginx/nginx.conf
+- Review Log
+  - tail -n 20 /var/log/nginx/error.log
+  - tail -n 20 /var/log/nginx/access.log
